@@ -1,0 +1,39 @@
+{
+  "name": "project_3",
+  "version": "1.0.0",
+  "description": "Gympass style app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/gympass.js",
+    "start:dev": "tsx watch src/gympass.ts",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "1.2.0",
+    "@types/node": "^18.15.0",
+    "@vitest/coverage-c8": "0.29.7",
+    "eslint": "8.36.0",
+    "prisma": "4.11.0",
+    "tsup": "^6.6.3",
+    "tsx": "^3.12.4",
+    "typescript": "^4.9.5",
+    "vite-tsconfig-paths": "4.0.7",
+    "vitest": "0.29.7"
+  },
+  "dependencies": {
+    "@prisma/client": "4.11.0",
+    "@types/bcryptjs": "2.4.2",
+    "bcryptjs": "2.4.3",
+    "dayjs": "1.11.7",
+    "dotenv": "16.0.3",
+    "fastify": "^4.14.1",
+    "zod": "3.21.4"
+  }
+}
